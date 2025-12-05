@@ -3,26 +3,26 @@
 using namespace std;
 
 void A(){
-    cout<<"A";
+    cout<<"A"<<endl;
 }
-void A1(){
-    cout<<"FUNC A1 CALLED";
-}
+
 void B(){
-    cout<<"FUNC B CALLED";
+    cout<<"FUNC B CALLED"<<endl;
 }
 void C(){
-    cout<<"FUNC C CALLED";
+    cout<<"FUNC C CALLED"<<endl;
 }
-
-
-
+void A1(){
+    cout<<"FUNC A1 CALLED"<<endl;
+    B();
+    C();
+}
 
 
 int main(){
-    cout<< "Jello";
+    cout<< "Jello"<<endl;
 A();
-
+A1();
 
 
     return 0;
