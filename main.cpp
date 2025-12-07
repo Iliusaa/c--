@@ -1,29 +1,90 @@
 #include <iostream>
+#include <cassert>
+#include <string_view>
 
-using namespace std;
-
-void A(){
-    cout<<"A"<<endl;
+//-------------------------------- NOMER 1
+/*void A(){
+    std::cout<<"A"<<endl;
 }
 
 void B(){
-    cout<<"FUNC B CALLED"<<endl;
+    std::cout<<"FUNC B CALLED"<<std::endl;
 }
 void C(){
-    cout<<"FUNC C CALLED"<<endl;
+    std::cout<<"FUNC C CALLED"<<std::endl;
 }
 void A1(){
-    cout<<"FUNC A1 CALLED"<<endl;
+    std::cout<<"FUNC A1 CALLED"<<std::endl;
     B();
     C();
 }
 
 
 int main(){
-    cout<< "Jello"<<endl;
+    std::cout<< "Jello"<<std::endl;
 A();
 A1();
 
 
     return 0;
 }
+*/
+//--------------------------------
+
+// NOMER 2
+
+/*
+
+struct Leg            // тип Leg
+{
+    int length;       // тип int
+};
+
+struct Arm            // тип структура
+{
+    int power;        // тип int
+};
+
+struct Person         // тип структура
+{
+    std::array<Leg, 2> legs; // тип std::array<Leg, 2>,  2 объекта legs
+    Arm arms[2];              // массив из 2 объектов Arm, тип Arm
+};
+
+int main()
+{
+    Person person;    // объект person , 2 обьекта legs.length и 2 объекта arms.power
+}
+*/
+
+
+//MOMER 3
+/*int countOnes(std::string_view text) {
+    int count = 0;
+    for (char c : text) {
+        if (c == '1')
+            count++;
+    }
+    return count;
+}
+
+void test_ones() {
+    // нет ни одной '1'
+    assert(countOnes("000") == 0);
+    assert(countOnes("") == 0);
+
+    // несколько '1'
+    assert(countOnes("10101") == 3);
+    assert(countOnes("111000111") == 6);
+
+    // все символы — '1'
+    assert(countOnes("111111") == 6);
+
+    // смешанные символы
+    assert(countOnes("abc1d1e") == 2); 
+}
+int main() {
+    test_ones();
+    return 0;
+}*/
+
