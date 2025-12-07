@@ -2,7 +2,43 @@
 #include <cassert>
 #include <string_view>
 
-//-------------------------------- NOMER 1
+//NOMER 1
+/*
+struct Fruits
+{
+    int apples;
+    int pears;
+    int oranges;
+};
+int main()
+{
+    Fruits fruits;
+
+    std::cout << "Apples: ";
+    std::cin >> fruits.apples;
+
+    std::cout << "Pears: ";
+    std::cin >> fruits.pears;
+
+    std::cout << "Oranges: ";
+    std::cin >> fruits.oranges;
+
+    bool  testFruits = false;
+    {
+    bool ifApples = fruits.apples > 5;
+    bool ifPears = fruits.pears < 8;
+    bool ifOranges = fruits.oranges == fruits.apples * 2;
+
+     testFruits = ifApples && ifPears && ifOranges;
+    }
+    if (testFruits)
+    {
+        std::cout << "Hello";
+    }
+
+    return 0;
+}*/
+//-------------------------------- NOMER 2
 /*void A(){
     std::cout<<"A"<<endl;
 }
@@ -31,7 +67,7 @@ A1();
 */
 //--------------------------------
 
-// NOMER 2
+// NOMER 3
 
 /*
 
@@ -58,7 +94,7 @@ int main()
 */
 
 
-//MOMER 3
+//MOMER 4
 /*int countOnes(std::string_view text) {
     int count = 0;
     for (char c : text) {
